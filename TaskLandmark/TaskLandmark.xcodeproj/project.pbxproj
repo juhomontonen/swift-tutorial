@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		61A47D9423CC59A800E8E5D5 /* rainbowlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61A47D9323CC59A800E8E5D5 /* rainbowlake.jpg */; };
-		61A47D9623CC59AC00E8E5D5 /* hiddenlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61A47D9523CC59AC00E8E5D5 /* hiddenlake.jpg */; };
-		61A47D9823CC59B100E8E5D5 /* icybay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61A47D9723CC59B100E8E5D5 /* icybay.jpg */; };
 		61A47D9A23CC5B6F00E8E5D5 /* RoomDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A47D9923CC5B6F00E8E5D5 /* RoomDetail.swift */; };
 		61B34E0023C86C7E00C106F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B34DFF23C86C7E00C106F1 /* AppDelegate.swift */; };
 		61B34E0223C86C7E00C106F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B34E0123C86C7E00C106F1 /* SceneDelegate.swift */; };
@@ -21,9 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		61A47D9323CC59A800E8E5D5 /* rainbowlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rainbowlake.jpg; path = ../../../../Downloads/BuildingListsAndNavigation/Complete/Landmarks/Landmarks/Resources/rainbowlake.jpg; sourceTree = "<group>"; };
-		61A47D9523CC59AC00E8E5D5 /* hiddenlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiddenlake.jpg; path = ../../../../Downloads/BuildingListsAndNavigation/Complete/Landmarks/Landmarks/Resources/hiddenlake.jpg; sourceTree = "<group>"; };
-		61A47D9723CC59B100E8E5D5 /* icybay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icybay.jpg; path = ../../../../Downloads/BuildingListsAndNavigation/Complete/Landmarks/Landmarks/Resources/icybay.jpg; sourceTree = "<group>"; };
 		61A47D9923CC5B6F00E8E5D5 /* RoomDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetail.swift; sourceTree = "<group>"; };
 		61B34DFC23C86C7E00C106F1 /* TaskLandmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskLandmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B34DFF23C86C7E00C106F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,9 +65,6 @@
 				61B34E0323C86C7E00C106F1 /* ContentView.swift */,
 				61A47D9923CC5B6F00E8E5D5 /* RoomDetail.swift */,
 				61B34E1523C8729C00C106F1 /* Room.swift */,
-				61A47D9723CC59B100E8E5D5 /* icybay.jpg */,
-				61A47D9523CC59AC00E8E5D5 /* hiddenlake.jpg */,
-				61A47D9323CC59A800E8E5D5 /* rainbowlake.jpg */,
 				61B34E0523C86C7F00C106F1 /* Assets.xcassets */,
 				61B34E0A23C86C7F00C106F1 /* LaunchScreen.storyboard */,
 				61B34E0D23C86C7F00C106F1 /* Info.plist */,
@@ -149,10 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61B34E0C23C86C7F00C106F1 /* LaunchScreen.storyboard in Resources */,
-				61A47D9423CC59A800E8E5D5 /* rainbowlake.jpg in Resources */,
 				61B34E0923C86C7F00C106F1 /* Preview Assets.xcassets in Resources */,
-				61A47D9623CC59AC00E8E5D5 /* hiddenlake.jpg in Resources */,
-				61A47D9823CC59B100E8E5D5 /* icybay.jpg in Resources */,
 				61B34E0623C86C7F00C106F1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
