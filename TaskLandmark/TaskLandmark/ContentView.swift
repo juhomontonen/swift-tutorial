@@ -22,7 +22,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
         List(rooms) { room in
-            NavigationLink(destination: Text(room.name)) {
+            NavigationLink(destination: RoomDetail(room: room)) {
                 Image(systemName: "heart.fill")
                 
                 VStack(alignment: .leading) {

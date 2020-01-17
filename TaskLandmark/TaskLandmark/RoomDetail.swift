@@ -12,12 +12,35 @@ struct RoomDetail: View {
     let room: Room
     
     var body: some View {
-        Text(room.name)
+        VStack {
+            MapView()
+                .edgesIgnoringSafeArea(.top)
+                .frame(height: 300)
+
+            CircleImage()
+                .offset(y: -130)
+                .padding(.bottom, -130)
+
+            VStack(alignment: .leading) {
+                Text("Turtle Rock")
+                    .font(.title)
+                HStack(alignment: .top) {
+                    Text("Joshua Tree National Park")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("California")
+                        .font(.subheadline)
+                }
+            }
+            .padding()
+
+            Spacer()
+        }
     }
 }
 
 struct RoomDetail_Previews: PreviewProvider {
     static var previews: some View {
-        RoomDetail(room: testData[1])
+    RoomDetail(room: testData[1])
     }
 }
