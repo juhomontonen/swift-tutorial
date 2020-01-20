@@ -8,7 +8,6 @@ The model for an individual landmark.
 import SwiftUI
 import CoreLocation
 
-
 struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
@@ -17,6 +16,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var state: String
     var park: String
     var category: Category
+    var isFavorite: Bool
 
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
@@ -28,6 +28,7 @@ struct Landmark: Hashable, Codable, Identifiable {
         case featured = "Featured"
         case lakes = "Lakes"
         case rivers = "Rivers"
+        case mountains = "Mountains"
     }
 }
 
