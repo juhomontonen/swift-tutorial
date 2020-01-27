@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61730C7123DEC74B007DB106 /* circle-blues.png in Resources */ = {isa = PBXBuildFile; fileRef = 61730C7023DEC74B007DB106 /* circle-blues.png */; };
+		61730C7923DED0E3007DB106 /* 01d.png in Resources */ = {isa = PBXBuildFile; fileRef = 61730C7823DED0E3007DB106 /* 01d.png */; };
+		61730C7B23DED78E007DB106 /* pekka-pouta01_seura.png in Resources */ = {isa = PBXBuildFile; fileRef = 61730C7A23DED78E007DB106 /* pekka-pouta01_seura.png */; };
 		61A73C5223D58C2500C3944C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A73C5123D58C2500C3944C /* AppDelegate.swift */; };
 		61A73C5423D58C2500C3944C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A73C5323D58C2500C3944C /* SceneDelegate.swift */; };
 		61A73C5623D58C2500C3944C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A73C5523D58C2500C3944C /* ContentView.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61730C7023DEC74B007DB106 /* circle-blues.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-blues.png"; sourceTree = "<group>"; };
+		61730C7823DED0E3007DB106 /* 01d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 01d.png; path = icons/01d.png; sourceTree = "<group>"; };
+		61730C7A23DED78E007DB106 /* pekka-pouta01_seura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pekka-pouta01_seura.png"; sourceTree = "<group>"; };
 		61A73C4E23D58C2500C3944C /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A73C5123D58C2500C3944C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61A73C5323D58C2500C3944C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +91,10 @@
 				61B2798123D5ADF500DF67EF /* CurrentWeatherViewModel.swift */,
 				61B2798323D5B5AC00DF67EF /* CurrentWeather.swift */,
 				61B2798923D5BC5F00DF67EF /* WeeklyWeatherViewModel.swift */,
+				61730C7823DED0E3007DB106 /* 01d.png */,
+				61730C7A23DED78E007DB106 /* pekka-pouta01_seura.png */,
 				61B2798F23D5C35600DF67EF /* WeeklyWeatherView.swift */,
+				61730C7023DEC74B007DB106 /* circle-blues.png */,
 				61B2798523D5BBD700DF67EF /* WeeklyWeather.swift */,
 				61A73C6923D5998C00C3944C /* Weather.swift */,
 				61A73C5723D58C2600C3944C /* Assets.xcassets */,
@@ -164,7 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				61A73C5E23D58C2600C3944C /* LaunchScreen.storyboard in Resources */,
+				61730C7923DED0E3007DB106 /* 01d.png in Resources */,
+				61730C7123DEC74B007DB106 /* circle-blues.png in Resources */,
 				61A73C5B23D58C2600C3944C /* Preview Assets.xcassets in Resources */,
+				61730C7B23DED78E007DB106 /* pekka-pouta01_seura.png in Resources */,
 				61A73C5823D58C2600C3944C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,6 +18,7 @@ struct CardView: View {
                 .foregroundColor(.white)
             HStack{
                 Text("\(list.temp.day.round)º")
+                Image("01d")
                 Text(list.temp.min.round.toString)
                     .font(.title)
                     .foregroundColor(.white)

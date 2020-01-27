@@ -43,7 +43,7 @@ class API {
     }
     
     class func weeklyWeather(_ city: String, onSuccess: @escaping (WeeklyWeather) -> Void) {
-        let query = ["q": "\(city)", "appid": appid, "units": "metric", "cnt": "5"]
+        let query = ["q": "\(city)", "appid": appid, "units": "metric", "cnt": "7"]
         guard baseUrlWeekly.withQueries(queries: query) != nil else { fatalError("Invalid URL for weekly weather")}
         guard let url = baseUrlWeekly.withQueries(queries: query) else { fatalError() }
 

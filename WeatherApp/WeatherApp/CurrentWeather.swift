@@ -14,7 +14,7 @@ struct CurrentWeather: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
-            Text("Today in \(weather?.name ?? "Unkown")")
+            Text("Today in \(weather?.name ?? "Unknown")")
             .font(.title)
             .foregroundColor(.white)
             .bold()
@@ -23,15 +23,17 @@ struct CurrentWeather: View {
                     .foregroundColor(.white)
                     .fontWeight(Font.Weight.heavy)
                     .font(.system(size: 65))
+                Image("01d")
             }
-            Text("\(weather?.weather.last?.description ?? "Unkown")")
+            Text("\(weather?.weather.last?.description ?? "Unknown")")
                 .foregroundColor(.white)
                 .font(.body)
             Text("\(weather?.main.tempMax.round ?? 0)")
                 .foregroundColor(.white)
                 .font(.body)
         }.frame(width: height, height: height)
-        .background(LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .topLeading, endPoint: .bottomTrailing))
+            .background(Image("circle-blues")
+                .resizable(resizingMode: .tile))
     }
 }
 
