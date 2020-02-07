@@ -21,22 +21,25 @@ struct ContentView: View {
                 Section(header: Text("Whats next?")) {
                     HStack {
                         TextField("New item", text: self.$newTodoItem)
-                        Button(action: {
-                            let toDoItem = ToDoItem(context: self.managedObjectContext)
-                            toDoItem.title = self.newTodoItem
-                            toDoItem.createdAt = Date()
-                            
-                            do {
-                                try self.managedObjectContext.save()
-                            } catch {
-                                print(error)
+                        if (!self.newTodoItem.isEmpty) {
+                            Button(action: {
+                                let toDoItem = ToDoItem(context: self.managedObjectContext)
+                                toDoItem.title = self.newTodoItem
+                                toDoItem.createdAt = Date()
+                                
+                                        do {
+                                            try self.managedObjectContext.save()
+                                        } catch {
+                                            print(error)
+                                        }
+
+                                
+                                self.newTodoItem = ""
+                            }){
+                                Image(systemName: "plus.circle.fill")
+                                    .foregroundColor(.green)
+                                    .imageScale(.large)
                             }
-                            
-                            self.newTodoItem = ""
-                        }){
-                            Image(systemName: "plus.circle.fill")
-                                .foregroundColor(.green)
-                                .imageScale(.large)
                         }
                     }
                 }.font(.headline)
