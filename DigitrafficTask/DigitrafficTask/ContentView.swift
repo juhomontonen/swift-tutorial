@@ -9,11 +9,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selected = 0
+    @ObservedObject var cam = CurrentCamViewModel()
+    @State var id: String = ""
     
-    @ObservedObject var camera = CurrentCamViewModel()
+    init() {
+        WebService().get(by: "C01502") {
+            print($0)
+        }
+    }
     
     var body: some View {
-        Text("\(camera.current?.dataUpdatedTime ?? "unknown")")
+        VStack{
+            TextField("Syötä id", text: $id){
+                self.cam.fetch(self.id)
+            }
+            CurrentCamera(camera: self.cam.current)
+        }
     }
 }
 

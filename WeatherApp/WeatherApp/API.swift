@@ -32,6 +32,7 @@ class API {
             }
             do {
                 let weather = try decoder.decode(Weather.self, from: data)
+                print(weather)
                 DispatchQueue.main.async {
                     onSuccess(weather)
                 }

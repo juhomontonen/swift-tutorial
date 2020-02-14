@@ -26,6 +26,13 @@ class API {
         print(url)
         
         URLSession.shared.dataTask(with: url) { (data, res, err) in
+             
+            guard let data = data else { return }
+            
+            let camResult = try! JSONDecoder().decode(Camera.self, from: data)
+            
+            print(camResult)
+            /*
             guard let data = data, err == nil else {
                 print("error 1")
                 fatalError(err!.localizedDescription)
@@ -46,6 +53,7 @@ class API {
                 print("error 2")
                 fatalError(error.localizedDescription)
             }
+ */
         }
     }
 }

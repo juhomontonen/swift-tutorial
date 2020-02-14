@@ -19,7 +19,7 @@ final class CurrentCamViewModel: ObservableObject {
 
 extension CurrentCamViewModel {
     func fetch(_ id: String = "C01502") {
-        API.fetchCam(by: id) {
+        WebService().get(by: id) {
             self.current = $0
         }
     }
