@@ -18,11 +18,3 @@ struct CameraPresetView: View {
         }
     }
 }
-
-/*
-struct CameraPresetView_Previews: PreviewProvider {
-    static var previews: some View {
-        CameraPresetView()
-    }
-}
-*/

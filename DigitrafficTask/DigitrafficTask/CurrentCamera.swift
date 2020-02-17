@@ -25,19 +25,6 @@ struct CurrentCamera: View {
                     }
                 }.navigationBarTitle(Text("Kamerat"))
             }
-            /*
-            Text("Noniin \(camera?.cameraStations[0].id ?? "Unknown")")
-            ImageView(withURL: camera?.cameraStations[0].cameraPresets[0].imageUrl ?? "asd")
-            if (camera?.cameraStations[0].cameraPresets != nil) {
-                Text("Kamerat:")
-                ForEach((camera?.cameraStations[0].cameraPresets)!) { cameraPreset in
-                    HStack {
-                        // ImageView(withURL: cameraPreset.imageUrl)
-                        Text(cameraPreset.presentationName)
-                    }
-                }
-            }
-            */
         }
     }
 }
