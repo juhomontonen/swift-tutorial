@@ -14,9 +14,30 @@ struct CurrentCamera: View {
     
     var body: some View {
         VStack {
-            Text("Noniin \(camera?.dataUpdatedTime ?? "Unknown")")
+            NavigationView {
+                List {
+                    if (camera?.cameraStations[0].cameraPresets != nil) {
+                        ForEach((camera?.cameraStations[0].cameraPresets)!) { cameraPreset in
+                            NavigationLink(destination: CameraPresetView(camPreset: cameraPreset)) {
+                                Text(cameraPreset.presentationName)
+                            }
+                        }
+                    }
+                }.navigationBarTitle(Text("Kamerat"))
+            }
+            /*
+            Text("Noniin \(camera?.cameraStations[0].id ?? "Unknown")")
             ImageView(withURL: camera?.cameraStations[0].cameraPresets[0].imageUrl ?? "asd")
-            Text("\(camera?.cameraStations.description ?? "ASD")")
+            if (camera?.cameraStations[0].cameraPresets != nil) {
+                Text("Kamerat:")
+                ForEach((camera?.cameraStations[0].cameraPresets)!) { cameraPreset in
+                    HStack {
+                        // ImageView(withURL: cameraPreset.imageUrl)
+                        Text(cameraPreset.presentationName)
+                    }
+                }
+            }
+            */
         }
     }
 }

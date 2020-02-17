@@ -14,18 +14,27 @@ struct ContentView: View {
     @State var id: String = ""
     
     init() {
-        WebService().get(by: "C01502") {
+        WebService().get(by: "C01503") {
             print($0)
         }
     }
     
     var body: some View {
+        /*
+        NavigationView {
+            List {
+                EmptyView()
+            }.navigationBarTitle(Text("Kamerapisteet"))
+        }
+        */
+        
         VStack{
             TextField("Syötä id", text: $id){
                 self.cam.fetch(self.id)
             }
             CurrentCamera(camera: self.cam.current)
         }
+        
     }
 }
 

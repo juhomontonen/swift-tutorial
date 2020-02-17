@@ -14,15 +14,13 @@ struct ImageView: View {
     
     init(withURL url: String) {
         imageLoader = ImageLoader(urlString: url)
-        print(imageLoader)
     }
     
     var body: some View {
         VStack {
             Image(uiImage: imageLoader.data != nil ? UIImage(data:imageLoader.data!)! : UIImage())
                 .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:100, height:100)
-        }
+                .aspectRatio(contentMode: .fill)
+            }
     }
 }
